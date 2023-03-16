@@ -1,0 +1,50 @@
+#game {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+  }
+  
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: background-color 0.5s ease;
+  }
+  
+  .square:hover {
+    background-color: #48CCE6;
+    cursor: pointer;
+  }
+  
+  .square.X {
+    background-color: #48CCE6;
+    color: #fff;
+  }
+  
+  .square.O {
+    background-color: #F44336;
+    color: #fff;
+  }
+  #resetBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
